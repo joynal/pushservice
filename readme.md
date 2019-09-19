@@ -132,7 +132,7 @@ All necessary server setup commands added on `setup.sh` file.
 
 ## Need sponsors
 
-If anyone can sponsor me servers for load testing, I will optimize it further.
+If anyone can sponsor me servers for load testing, I will optimize it further and will add all the necessary resources.
 
 ## License
 
