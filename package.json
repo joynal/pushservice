@@ -1,0 +1,25 @@
+{
+  "name": "pushservice",
+  "version": "0.0.1",
+  "description": "Simple scalable push service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joynal/pushservice"
+  },
+  "author": "Joynal",
+  "license": "MIT",
+  "homepage": "https://github.com/joynal/pushservice",
+  "dependencies": {
+    "aws-sdk": "^2.530.0",
+    "dotenv": "^8.1.0",
+    "mongoose": "^5.7.1",
+    "node-rdkafka": "^2.7.1",
+    "rand-token": "^0.4.0",
+    "web-push": "^3.3.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
