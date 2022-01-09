@@ -7,7 +7,7 @@ database.connect();
 const run = async () => {
   try {
     const siteId = process.argv[2] || '5c17804f2cbefa06ade61d64';
-    const total = process.argv[3] || 2000;
+    const total = process.argv[3] || 20000;
     const batchSize = 20000;
 
     console.info(`generating ${total} dummy subscribers...`);

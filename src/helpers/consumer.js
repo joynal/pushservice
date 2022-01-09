@@ -3,7 +3,6 @@ const Kafka = require('node-rdkafka');
 const { mq } = require('../config');
 const shutdown = require('./shutdown');
 
-
 module.exports = (groupId, topic, db = null) => {
   let options = {
     'group.id': groupId,

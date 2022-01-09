@@ -27,11 +27,17 @@ transfer pushes to subscriber's devices by using web-push protocol.
 
 ### Step 1: Installation
 
-```
+```bash
 git clone git@github.com:joynal/pushservice.git
 cd pushservice
 npm i
 npm install -g pm2
+```
+
+I've included a docker-compose file in the root directory, so that you can test locally first. You can run the following command to start the service:
+
+```bash
+docker-compose up
 ```
 
 ### Step 2: Create Kafka topics
