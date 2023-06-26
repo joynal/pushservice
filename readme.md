@@ -52,12 +52,12 @@ Copy `.env.example` to `.env` and replace `.env` configurations.
 ### Step 4: Generate dummy data
 
 Generate site:
-```
+```bash
 node seed/generateSite.js
 ```
 
 Copy site id then generate push & subscribers:
-```
+```bash
 node seed/seed/generatePush.js [siteId]
 node seed/generateSubscribers.js [siteId] [number of subscribers]
 ```
@@ -65,7 +65,7 @@ node seed/generateSubscribers.js [siteId] [number of subscribers]
 ### Step 5: Server tweak
 
 Increase your open file limits:
-```
+```bash
 ulimit -n 1000000
 ulimit -S 1000000
 ```
@@ -73,30 +73,18 @@ ulimit -S 1000000
 ### Step 6: Start services
 
 parser:
-```
+```bash
 node src/parser.js
 ```
 
 sender:
-```
+```bash
 node src/sender.json
-```
-
-Alternative `pm2` way, it will create maximum instances.
-
-parser:
-```
-pm2 start pm2/parser.json
-```
-
-sender:
-```
-pm2 start pm2/sender.json
 ```
 
 ### Step 7: Send a push notification
 
-```
+```bash
 node cmd/send.js [pushId]
 ```
 
